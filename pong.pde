@@ -22,8 +22,8 @@ void setup() {
     ellipseMode(CENTER_RADIUS);
     noStroke();
     smooth();
-    ball_y = height/2;
-    ball_x = 1;
+    ball_y = height/10;
+    ball_x = 10;
 };
 
 void draw() {
