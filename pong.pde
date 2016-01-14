@@ -28,10 +28,10 @@ void setup() {
 
 void draw() {
     // Background color... RGB
-    background(255,0,255);
+    background(200,0,255);
 
     // Increment x and y by speed of ball
-    ball_x += ball_dir * 10.0;
+    ball_x += ball_dir * 20.0;
     ball_y += dy;
 
     // If the ball was missed... start over and add two ball
