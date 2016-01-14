@@ -34,7 +34,7 @@ void draw() {
     ball_x += ball_dir * 10.0;
     ball_y += dy;
 
-    // If the ball was missed... double high score
+    // If the ball was missed... start over
     if(ball_x > width+ball_size) {
         ball_x = -width/2 - ball_size;
         ball_y = random((0.25*height), (0.75*height));
@@ -56,7 +56,7 @@ void draw() {
         ball_dir *= -1;
 
         // Send a message to the main page updating the score...
-        score += 1;
+        score += 100;
         document.getElementById("score").innerHTML = "Score = " + score;
 
         // Adding in the total hits here...
