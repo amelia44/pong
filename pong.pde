@@ -22,19 +22,19 @@ void setup() {
     ellipseMode(CENTER_RADIUS);
     noStroke();
     smooth();
-    ball_y = height/10;
-    ball_x = 10;
+    ball_y = height/2;
+    ball_x = 1;
 };
 
 void draw() {
     // Background color... RGB
-    background(75,10,80);
+    background(255,30,255);
 
     // Increment x and y by speed of ball
     ball_x += ball_dir * 10.0;
     ball_y += dy;
 
-    // If the ball was missed... start over
+    // If the ball was missed... start over and add another ball
     if(ball_x > width+ball_size) {
         ball_x = -width/2 - ball_size;
         ball_y = random((0.25*height), (0.75*height));
