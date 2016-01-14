@@ -2,7 +2,7 @@
 float ball_x;
 float ball_y;
 float ball_dir = 1; // Direction in x 
-float ball_size = 7;  // Radius of ball
+float ball_size = 20;  // Radius of ball
 float dy = 2;  // Change in y
 
 // Global variables for the paddle
@@ -28,7 +28,8 @@ void setup() {
 
 void draw() {
     // Background color... RGB
-    background(200,0,255);
+    background(175
+    (175,0,255);
 
     // Increment x and y by speed of ball
     ball_x += ball_dir * 20.0;
